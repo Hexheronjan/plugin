@@ -1,0 +1,201 @@
+/**
+ * Admin Styles for Premium Membership Plugin.
+ */
+
+.pm-admin-wrap {
+    margin-top: 20px;
+}
+
+.pm-admin-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pm-admin-title .dashicons {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: #2271b1;
+}
+
+/* Stat Cards Grid */
+.pm-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.pm-stat-card {
+    background: #ffffff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.pm-stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pm-stat-icon .dashicons {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+}
+
+.pm-stat-primary .pm-stat-icon { background: #e0f2fe; color: #0284c7; }
+.pm-stat-success .pm-stat-icon { background: #dcfce7; color: #16a34a; }
+.pm-stat-warning .pm-stat-icon { background: #fef3c7; color: #d97706; }
+.pm-stat-info .pm-stat-icon { background: #ede9fe; color: #7c3aed; }
+
+.pm-stat-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.pm-stat-label {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.pm-stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 4px;
+}
+
+/* Dashboard Columns */
+.pm-dashboard-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+@media (max-width: 960px) {
+    .pm-dashboard-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Component */
+.pm-card {
+    background: #ffffff;
+    border: 1px solid #ccd0d4;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.pm-card-header {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+}
+
+.pm-card-header h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.pm-card-body {
+    padding: 20px;
+}
+
+/* Badges & Tags */
+.pm-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.pm-badge-active, .pm-badge-paid {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.pm-badge-expired, .pm-badge-failed {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.pm-badge-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.pm-badge-inactive, .pm-badge-cancelled {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+.pm-badge-refunded {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.pm-tag {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+/* Info Lists */
+.pm-info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pm-info-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pm-info-list li:last-child {
+    border-bottom: none;
+}
+
+/* JSON Code Preview */
+.pm-json-preview {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 11px;
+    color: #475569;
+    max-height: 80px;
+    overflow-y: auto;
+    margin: 0;
+}
